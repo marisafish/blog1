@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記事・・・まりさふぃっしゅブログ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap");
+html, body {
+  font-family: 'Zen Maru Gothic';
+  font-size: 16px;
+    background-image: linear-gradient(to top right, #ff80ec, #fff382);
+    background-repeat: no-repeat;
+    background-position:60% 60%;
+    background-size:cover;
+    scroll-behavior: smooth;
+}
+
+* a {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #000066;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #000066;    /* 枠の指定 */
+}
+* a:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #000066;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+h1 {
+text-align:  center;
+font-size: 30px;
+}
+
+div[class^="menu"], [class^="notes"] {
+background-color: #122300;
+color: #fff;
+}
+
+details[open] {
+background-color: #002720;
+color: #fff;
+}
+
+.summary_inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+summary {
+  /* display: list-item;以外を指定してデフォルトの三角形アイコンを消します */
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  /* Safariで表示されるデフォルトの三角形アイコンを消します */
+  display: none;
+}
+
+.material-symbols-outlined {
+  /* 省略 */
+  font-size: 50;
+  transition: transform 0.4s;
+}
+
+details[open] .material-symbols-outlined {
+  transform: rotate(180deg);
+}
+</style>
+<body>
+<h1>まりさふぃっしゅブログ</h1>
+<div class="menu">
+<tr>
+<td><a href="https://marisafish.github.io/blog1/">ホーム</a></td>
+<td><a href="https://marisafish.github.io/blog1/article.html">記事</a></td>
+<td><a href="https://marisafish.github.io/blog1/sns.html">SNS</a></td>
+<td><a href="https://marisafish.github.io/blog1/video.html">動画</a></td>
+<td><a href="https://marisafish.github.io/blog1/contacts.html">お問い合わせ</a></td>
+</tr>
+</div>
+<h2>記事</h2>
+<div class="uvoice">
+<h1>RSSフィードを自作する方法</h1>
+<details class="js-details">
+<summary class="js-summary"><h1>目次</h1><span class="material-symbols-outlined">
+expand_more
+</span></summary>
+<div class="content js-content">
+<div>
+<a href="#introduction" class="">説明</a><br>
+<a href="#warning">必要なファイル</a><br>
+<a href="#code">やり方</a><br>
+<a href="#getapp">表示した結果</a><br>
+<a href="#howtopointget">アップロード、読むか埋め込む</a>
+</div>
+</div>
+</details>
+<div id="introduction">
+<p>
+今回はRSSフィードを自作する方法を紹介します。
+</p>
+</div>
+<div id="warning">
+<h1>必要な物</h1>
+<p>HTMLファイルとXMLファイル</p>
+</div>
+<div id="code">
+<h1>やり方</h1>
+<p>まずHTMLで記事のページを作って、タイトルと内容をコピーします。</p>
+<iframe src="https://dl.dropboxusercontent.com/scl/fi/vcgyso8ei5p3e52dtf4d8/screen-20240423-184014.mp4?rlkey=szwd9ql3r472c9cy5tynq2x6k" width="375" height="640"></iframe>
+<p>その次に、XMLファイルをブログのディレクトリに作ります。</p>
+<img src="https://dl.dropboxusercontent.com/scl/fi/uduijdwahysbnxoovzi74/Screenshot_2024-04-23-18-37-37-340.jpeg?rlkey=ce3151trgi0aykpta6e5cikrr&dl=0" width="375" height="640"></img>
+<p>
+<>がかっこで、かっこ閉じするには、<のあとに/を入れます。<br>
+2行までが宣言文で、1行目の?xml version="1.0" encoding="utf-8"?はXMLのバージョンは1.0、文字コードはUTF-8であることを表します。<br>
+2行目のrss version="2.0"はRSSのバージョンが2.0であることを表します。<br>
+早速書いていきましょう。<br>
+まず、channelタグを入れます。<br>
+そのあと、titleタグを入れ、titleとかっこ閉じの間に適当な名前を入れます。<br>
+descriptionタグに、先程と同じように説明を入れます。<br>
+その次にlinkタグにサイトアドレスを入れます。<br>
+それでは、記事を書いていきます。<br>
+itemタグを入れ、その中にtitleタグを入れ、記事の名前を入れます。<br>
+linkタグを入れます。その後、記事のアドレスを入れます。<br>
+dc:dateタグに、記事が完成した時間を[2024-04-22T22:00+09:00]のように入れます。<br>
++09:00は日本時間って言う意味です。<br>
+descriptionタグを入れ、記事の内容を入り切るように入れます。<br>
+画像などのデータを入れてもOKです。<br>
+descriptionタグとitemタグを閉じます。<br>
+2個目の記事を追加したい時は、itemタグ内の説明と同じようにします。<br>
+終わるときは、channelタグとrssタグを閉じます。<br>
+これで完成です。
+</p>
+</div>
+<div id="getapp">
+<p>RSSを表示してみるとこうなります。</p>
+<img src="https://dl.dropboxusercontent.com/scl/fi/9gtpnh183injwawiozfdr/Screenshot_2024-04-23-19-28-03-779.jpeg?rlkey=xsohb66yc9f391o5hovvsoiti&dl=0" width="375" height="640"></img>
+</div>
+<div id="howtopointget">
+<p>その後、XMLファイルをサーバーにアップロードします。</p>
+<p>その後、アップロードしたXMLファイルのURLをコピーして、RSSリーダーで表示します。埋め込みのジェネレーターサイトもいろいろあるので、よかったらチェックしてみて下さい。</p><br>
+<p>今回はRSSフィードを自作する方法を紹介しました。</p>
+<p>以上</p>
+</div>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>まりさふぃっしゅ</p>
+<p>2024 marisafish</p>
+<tr>
+<td><a href="https://marisafish.github.io/blog1/">ホーム</a></td>
+<td><a href="https://marisafish.github.io/blog1/article.html">記事</a></td>
+<td><a href="https://marisafish.github.io/blog1/sns.html">SNS</a></td>
+<td><a href="https://marisafish.github.io/blog1/video.html">動画</a></td>
+<td><a href="https://marisafish.github.io/blog1/contacts.html">お問い合わせ</a></td><br>
+</tr>
+<a href="https://twitter.com/tirunoandreimu" target="_blank">Twitter</a>
+<a href="https://youtube.com/@marisafish967?feature=shared" target="_blank">Youtube</a>
+<a href="https://github.com/marisafish" target="_blank">Github</a>
+<p>このページはGithub Pagesを使用しています。</p>
+</div>
+</body>
+</html>
