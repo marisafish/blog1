@@ -35,16 +35,49 @@ color: #fff;
 }
 </style>
 <body>
-<h1>まりさふぃっしゅブログ</h1>
-<div class="menu">
-<tr>
-<td><a href="https://marisafish.github.io/blog1/">ホーム</a></td>
-<td><a href="https://marisafish.github.io/blog1/article.html">記事</a></td>
-<td><a href="https://marisafish.github.io/blog1/sns.html">SNS</a></td>
-<td><a href="https://marisafish.github.io/blog1/video.html">動画</a></td>
-<td><a href="https://marisafish.github.io/blog1/contacts.html">お問い合わせ</a></td>
-</tr>
-</div>
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <h1 class="navbar-brand">まりさふぃっしゅブログ</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">まりさふぃっしゅブログ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <td><a href="https://marisafish.github.io/blog1/" class="nav-link">ホーム</a></td>
+          </li>
+          <li class="nav-item">
+            <td><a href="https://marisafish.github.io/blog1/article.html" class="nav-link">記事</a></td>
+          </li>
+          <li class="nav-item">
+            <td><a href="https://marisafish.github.io/blog1/sns.html" class="nav-link">SNS</a></td>
+            <ul class="nav-item">
+              <td><a href="https://marisafish.github.io/blog1/video.html" class="nav-link">動画</a></td>
+              <td><a href="https://marisafish.github.io/blog1/contacts.html"class="nav-link">お問い合わせ</a></td>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <div class="wrapper">
+    <div class="search-area">
+      <form>
+        <input type="text" id="search-text" placeholder="検索ワードを入力">
+      </form>
+      <div class="search-result">
+        <div class="search-result__hit-num"></div>
+        <div id="search-result__list"></div>
+      </div>
+    </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 <h2>お問い合わせ</h2>
 <h3>通常</h3>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRg9BDdYAM7t_LeBO2-mIHB88B9GQblJSIoDCJNpM8QUgCPg/viewform?embedded=true" width="640" height="770" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
