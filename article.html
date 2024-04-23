@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>記事・・・まりさふぃっしゅブログ</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">   
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap");
 html, body {
@@ -13,7 +14,7 @@ html, body {
     background-image: linear-gradient(to top right, #ff80ec, #fff382);
     background-repeat: no-repeat;
     background-position:60% 60%;
-    background-size:cover;
+    background-size: cover;
 }
 
 * a {
@@ -41,6 +42,11 @@ text-align:  center;
 font-size: 30px;
 }
 
+div[class="1"], [class="2"] {
+display: flex;
+justify-content: center;
+}
+
 div[class^="menu"], [class^="notes"] {
 background-color: #122300;
 color: #fff;
@@ -58,15 +64,25 @@ color: #fff;
 </tr>
 </div>
 <h2>記事</h2>
-<div class="nyanko1">
-<h3>【にゃんこ大戦争】日本編第3章の西表島まで進みましたww</h3>
-<img src="https://lh5.googleusercontent.com/HLM9xLydQ5QmuFQxYfrf1CJgdHdN2SinNnS_ktmbjbDiBCFY0JkFjFGyQ9inZmq8rdZx3H8WYolxksSpejpGCrex6X-d_1YEszTqsPWvZCQEe6_5Ktm29ikldwsANdrzvw=w1280" width="560" height="315"></img>
+<div class="1">
+<div class="card" style="width: 18rem;">
+  <img src="https://lh5.googleusercontent.com/HLM9xLydQ5QmuFQxYfrf1CJgdHdN2SinNnS_ktmbjbDiBCFY0JkFjFGyQ9inZmq8rdZx3H8WYolxksSpejpGCrex6X-d_1YEszTqsPWvZCQEe6_5Ktm29ikldwsANdrzvw=w1280" class="card-img-top" width="560" height="315" alt="【にゃんこ大戦争】日本編第3章の西表島まで進みましたwwの画像">
+  <div class="card-body">
+    <h3>【にゃんこ大戦争】日本編第3章の西表島まで進みましたww</h3>
+  </div>
 </div>
-<div class="uvoice">
-<h1>ポイ活アプリ【Uvoice】</h1>
-<a href="https://marisafish.github.io/blog1/article/20240422.html">記事を見る</a>
+<div class="card" style="width: 18rem;">
+  <img src="https://u-voice.net/wp-content/themes/uvoice/assets/img/splash-img01.png" class="card-img-top" width="560" height="315">
+  <div class="card-body">
+    <h5 class="card-title">ポイ活アプリ【Uvoice】</h5>
+    <p class="card-text">このアプリを使うと、稼げます。<br>
+GooglePlayのリンクを載せておきます。</p>
+    <a href="https://marisafish.github.io/blog1/article/20240422.html" class="btn btn-primary">記事を見る</a>
+  </div>
 </div>
-<div class="Over10subscribers">
+</div>
+<div class="2">
+<div class="card" style="width: 565;">
 <h1>チャンネル登録者10人突破！！</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jDeIdsMSdag"></iframe>
 </div>
@@ -86,5 +102,6 @@ color: #fff;
 <a href="https://github.com/marisafish" target="_blank">Github</a>
 <p>このページはGithub Pagesを使用しています。</p>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
