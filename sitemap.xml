@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in posts %}
+  <url>
+    <loc>https://marisafish.github.io/blog1/</loc>
+    {% if post.updated %}
+    <lastmod>2024-04-23T23:48:00+09:00</lastmod>
+    {% elif post.date %}
+    
+  </url>
+  {% endfor %}
+
+  <url>
+    <loc>https://marisafish.github.io/blog1/article.html</loc>
+    <lastmod>2024-04-23T23:48:00+09:00</lastmod>
+  </url>
+
+  {% for tag in tags %}
+  <url>
+    <loc>https://marisafish.github.io/blog1/sns.html</loc>
+    <lastmod>2024-04-23T23:48:00+09:00</lastmod>
+  </url>
+  {% endfor %}
+
+  {% for cat in categories %}
+  <url>
+    <loc>https://marisafish.github.io/blog1/video.html</loc>
+    <lastmod>2024-04-23T23:48:00+09:00</lastmod>
+  </url>
+  {% endfor %}
+　
+  {%　for con in contact　%}
+  <url>
+   <loc>https://marisafish.github.io/blog1/contacts.html</loc>
+   <lastmod>2024-04-23T23:48:00+09:00</lastmod>
+  </url>
+   {% endfor %}
+</urlset>
