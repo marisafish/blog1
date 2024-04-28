@@ -29,5 +29,46 @@ GooglePlay
 </description>
 <pubDate>Mon, 22 Apr 2024 22:54:00 GMT</pubDate>
 </item>
+<item>
+<title>RSSフィードを自作する方法</title>
+<link>https://marisafish.github.io/blog1/article/20240423.html</link>
+<lastBuildDate>Sun, 28 Apr 2024 17:04:00 GMT</lastBuildDate>
+<description>
+<![CDATA[
+<img width="560" height="315" src="https://png.pngtree.com/png-clipart/20190614/original/pngtree-vector-rss-feed-icon-png-image_3785595.jpg">
+今回はRSSフィードを自作する方法を紹介します。
+必要な物
+HTMLファイルとXMLファイル
+やり方
+まずHTMLで記事のページを作って、タイトルと内容をコピーします。
+その次に、XMLファイルをブログのディレクトリに作ります。
+<>がかっこで、かっこ閉じするには、<のあとに/を入れます。
+2行までが宣言文で、1行目の?xml version="1.0" encoding="utf-8"?はXMLのバージョンは1.0、文字コードはUTF-8であることを表します。
+2行目のrss version="2.0"はRSSのバージョンが2.0であることを表します。
+早速書いていきましょう。
+まず、channelタグを入れます。
+そのあと、titleタグを入れ、titleとかっこ閉じの間に適当な名前を入れます。
+descriptionタグに、先程と同じように説明を入れます。
+その次にlinkタグにサイトアドレスを入れます。
+それでは、記事を書いていきます。
+itemタグを入れ、その中にtitleタグを入れ、記事の名前を入れます。
+linkタグを入れます。その後、記事のアドレスを入れます。
+dc:dateタグに、記事が完成した時間を[2024-04-22T22:00+09:00]のように入れます。
++09:00は日本時間って言う意味です。
+descriptionタグを入れ、記事の内容を入り切るように入れます。
+画像などのデータを入れてもOKです。
+descriptionタグとitemタグを閉じます。
+2個目の記事を追加したい時は、itemタグ内の説明と同じようにします。
+終わるときは、channelタグとrssタグを閉じます。
+これで完成です。
+RSSを表示してみるとこうなります。
+その後、XMLファイルをサーバーにアップロードします。
+その後、アップロードしたXMLファイルのURLをコピーして、RSSリーダーで表示します。埋め込みのジェネレーターサイトもいろいろあるので、よかったらチェックしてみて下さい。
+今回はRSSフィードを自作する方法を紹介しました。
+以上
+]]>
+</description>
+<pubDate>Tue, 23 Apr 2024 22:57:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
