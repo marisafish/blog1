@@ -4,38 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="BWXM_ckKI37GdAFVx8ZsDUIMgkzKNd2wP5y9od6bHbY" />    
-<title>SNS・・・まりさふぃっしゅブログ</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<link rel="icon" href="https://raw.githubusercontent.com/marisafish/blog1/main/favicon%20(1)%20(1).ico" id="favicon">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-00K06P5N7J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-00K06P5N7J');
-</script>
+    <title>まりさふぃっしゅブログ</title>
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/7-2-1/css/7-2-1.css">
+    <link rel="icon" href="https://sato-icons.com/wp/wp-content/uploads/2020/09/検索アイコン.png" id="favicon">
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap");
 html, body {
   font-family: 'Zen Maru Gothic';
   font-size: 16px;
-    background-image: linear-gradient(to top right, #ff80ec, #fff382);
+    background-image: url(https://min-chi.material.jp/mc/materials/background-c/levee_trail/_levee_trail_1.jpg);    /* 背景画像指定 */
     background-repeat: no-repeat;
     background-position:60% 60%;
-    background-size:500%;
-}
-
-h1 {
-text-align:  center;
-font-size: 30px;
-}
-
-div[class="menu"], [class="notes"] {
-background-color: #122300;
-color: #fff;
+    background-size:cover;
 }
 
 * a {
@@ -49,60 +30,112 @@ color: #fff;
   color         : #ffffff;     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
   transition    : .3s;         /* なめらか変化 */
-  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
   border        : 2px solid #000066;    /* 枠の指定 */
 }
 * a:hover {
-  box-shadow    : none;        /* カーソル時の影消去 */
   color         : #000066;     /* 背景色     */
   background    : #ffffff;     /* 文字色     */
 }
+
+iframe {
+box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+}
+
+h1 {
+font-size: 21.5px;
+}
+
+div[class^="menu"], [class^="notes"] {
+background-color: #122300;
+color: #fff;
+}
+
+div[class="collapse navbar-collapse"] {
+padding: 5;
+}
+
+header[class="navbar navbar-expand-lg bg-body-tertiary"] {
+	width: 250px;		/*幅*/
+	padding: 0 2vw;		/*ヘッダー内の余白。上下、左右への順番。*/
+	margin-top: 5vw;	/*ヘッダーの上に空けるスペース*/
+	text-align: center;	/*テキストをセンタリング*/
+}
+
+/*ロゴ*/
+header [class="logo"] img {display: block;}
+header #logo {
+	padding: 0;margin: 0;
+}
+
+/*ロゴ下の小文字*/
+header #logo span {
+	display: block;
+	font-size: 0.7rem;	/*文字サイズを70%に*/
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+	header {
+		position: fixed;	/*スクロールしても動かないようにする設定*/
+		left: 0px;
+		top: 0px;
+	}
+
+	}/*追加指定ここまで*/
+
+	/*画面の高さが500px以下の追加指定*/
+	@media screen and (max-height:500px) {
+
+	header {
+		position: absolute;	/*メニューが切れて見えなくならないように、fixedを中止する*/
+	}
+
+	}/*追加指定ここまで*/
+	
+/*mainブロック（右側のsectionを囲むブロック）
+---------------------------------------------------------------------------*/
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+	main[class="mn"] {
+		margin-left: 250px;	/*headerのwidthに合わせる*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+/*main内のh2*/
+main h2 {
+	font-size: 2.5rem;	/*文字サイズを2.5倍*/
+}
+
+/*main内のh3*/
+main h3 {
+	font-size: 1.5rem;	/*文字サイズを1.5倍*/
+}
 </style>
 <body>
-<meta name="google-site-verification" content="BWXM_ckKI37GdAFVx8ZsDUIMgkzKNd2wP5y9od6bHbY" />
-<nav class="navbar bg-body-tertiary fixed-top">
+<div class="titleandmenu">
+<h1 class="logo">まりさふぃっしゅブログ</h1>
+<header class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <h1 class="navbar-brand">まりさふぃっしゅブログ</h1>
-    <script async src="https://cse.google.com/cse.js?cx=424b9347fca59470f">
-    </script>
-    <div class="gcse-search"></div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">まりさふぃっしゅブログ</h5>
-        
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <td><a href="https://marisafish.github.io/blog1/" class="nav-link">ホーム</a></td>
-          </li>
-          <li class="nav-item">
-            <td><a href="https://marisafish.github.io/blog1/article.html" class="nav-link">記事</a></td>
-          </li>
-          <li class="nav-item">
-            <td><a href="https://marisafish.github.io/blog1/sns.html" class="nav-link">SNS</a></td>
-            <ul class="nav-item">
-              <td><a href="https://marisafish.github.io/blog1/video.html" class="nav-link">動画</a></td>
-              <td><a href="https://marisafish.github.io/blog1/contacts.html"class="nav-link">お問い合わせ</a></td>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <div class="wrapper">
-    <div class="search-area">
-      <script async src="https://cse.google.com/cse.js?cx=424b9347fca59470f">
-</script>
-<div class="gcse-search"></div>
-    </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav><br><br><br><br><br>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<tr>
+<td><a href="https://marisafish.github.io/blog1/" class="nav-link">ホーム</a></td>
+<td><a href="https://marisafish.github.io/blog1/article.html" class="nav-link">記事</a></td>
+<td><a href="https://marisafish.github.io/blog1/sns.html" class="nav-link">SNS</a></td>
+<td><a href="https://marisafish.github.io/blog1/video.html" class="nav-link">動画</a></td>
+<td><a href="https://marisafish.github.io/blog1/contacts.html"class="nav-link">お問い合わせ</a></td>
+<td><a href="https://twitter.com/tirunoandreimu" target="_blank">Twitter</a></td>
+<td><a href="https://youtube.com/@marisafish967?feature=shared" target="_blank">Youtube</a></td>
+<td><a href="https://github.com/marisafish" target="_blank">Github</a></td>
+</tr>
+</div>
+</header>
+</div>
+<main class="mn">
 <h2>SNS</h2>
 <h3>X</h3>
 <a class="twitter-timeline" href="https://twitter.com/tirunoandreimu?ref_src=twsrc%5Etfw">Tweets by tirunoandreimu</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -110,22 +143,6 @@ color: #fff;
 <script type="text/javascript">
 document.write('<scr'+'ipt type="text/javascript" src="https://ad.ddo.jp/300x250.js.php?ddo_id=marisafishblog&ddo_i='+Math.floor((new Date()).getTime()/1000/60)+'"><'+'/scr'+'ipt>');
 </script>
-<div class="notes">
-<p>まりさふぃっしゅ</p>
-<p>2024 marisafish</p>
-<tr>
-<td><a href="https://marisafish.github.io/blog1/">ホーム</a></td>
-<td><a href="https://marisafish.github.io/blog1/article.html">記事</a></td>
-<td><a href="https://marisafish.github.io/blog1/sns.html">SNS</a></td>
-<td><a href="https://marisafish.github.io/blog1/video.html">動画</a></td>
-<td><a href="https://marisafish.github.io/blog1/contacts.html">お問い合わせ</a></td><br>
-</tr>
-<a href="https://twitter.com/tirunoandreimu" target="_blank">Twitter</a>
-<a href="https://youtube.com/@marisafish967?feature=shared" target="_blank">Youtube</a>
-<a href="https://github.com/marisafish" target="_blank">Github</a>
-<a href="https://marisafish.github.io/blog1/rss.xml"　target="_blank">RSSフィード</a>
-<p>このページはGithub Pagesを使用しています。</p>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</main>
 </body>
 </html>
